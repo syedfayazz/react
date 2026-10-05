@@ -1,0 +1,28 @@
+.image{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.card{
+  margin:2%;
+  padding: 1%;
+}
+button{
+  margin: 2px !important;
+}
+.btn-full {
+  width: 49%;
+  display: block;
+}
+.light {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
