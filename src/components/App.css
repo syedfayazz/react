@@ -248,6 +248,30 @@ select.input-class {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+.employee-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.employee-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  background: white;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card h3 {
+  margin-top: 0;
+}
+
+.list-btn {
+  margin-right: 10px;
+}
+
 .search-container {
   display: flex;
   justify-content: flex-end;

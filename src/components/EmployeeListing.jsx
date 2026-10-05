@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function EmployeeListing() {
     const [search, setSearch] = useState("");
+    const navigate = useNavigate();
 
     const [page, setPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
@@ -69,6 +71,9 @@ function EmployeeListing() {
         <div className="container">
             <h2>Employee Listing</h2>
             <div className="search-container">
+                <button className="list-btn" onClick={() => navigate("/employee-cards")}>
+                    Card View
+                </button>
                 <input
                     type="text"
                     placeholder="Search"

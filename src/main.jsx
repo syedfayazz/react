@@ -5,6 +5,7 @@ import './index.css'
 import App from './components/App.jsx'
 import EmployeeListing from './components/EmployeeListing.jsx'
 import AddEmployee from './components/AddEmployee.jsx'
+import EmployeeCards from './components/EmployeeCards.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/add-employee" element={<AddEmployee />} />
         <Route path="/employees" element={<EmployeeListing />} />
+        <Route path="/employee-cards" element={<EmployeeCards />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
